@@ -50,7 +50,7 @@ class vouchbtn(discord.ui.View):
         await interaction.response.send_message("Vouch has been denied", ephemeral=False)
         user = client.get_user(int(self.data['vouch_user_id']))
         await user.send(f"Your vouch from {self.data['discord_username']}#{self.data['discord_discriminator']} has been denied")
-        
+
 
 
 
